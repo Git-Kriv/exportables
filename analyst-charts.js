@@ -47,6 +47,7 @@
         const apiKey = this.getAttribute("api-key");
         const font = this.getAttribute("font");
         const theme = this.getAttribute("theme");
+        const grid = this.getAttribute("grid");
         const palette = this.parsePalette(this.getAttribute("palette"));
   
         if (!apiKey) {
@@ -93,6 +94,7 @@
                 font: font,
                 theme: theme,
                 palette: palette,
+                grid: grid,
               }),
             }
           );
